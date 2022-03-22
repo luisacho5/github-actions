@@ -1,6 +1,7 @@
 name: example
 
-on: 
+on:
+  push:
   workflow_dispatch:
 
 jobs:
