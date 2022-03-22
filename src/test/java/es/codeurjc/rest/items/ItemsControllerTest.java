@@ -14,9 +14,9 @@ public class ItemsControllerTest {
 		ItemsRepository itemsRepository = new ItemsRepository();
 
 		Item item = new Item();
-		String itemDescription = "Tomate";
+		String description = "Tomate";
 		boolean itemCheked = false;
-		item.setDescription(itemDescription);
+		item.setDescription(description);
 		item.setChecked(itemCheked);
 
 		// WHEN
@@ -25,7 +25,7 @@ public class ItemsControllerTest {
 		
 		// THEN
 
-		assertThat(postedItem.getDescription()).isEqualTo(itemDescription);
+		assertThat(postedItem.getDescription()).isEqualTo(description);
 	}
 
 }
